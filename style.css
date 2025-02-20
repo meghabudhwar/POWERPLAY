@@ -1,0 +1,246 @@
+*{
+    margin : 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ErrorMsg; /* Or whatever name you want */
+    src: url('Fonts/joystix/joystix monospace.otf') format('opentype'); /* Use correct format */
+    font-weight: normal; /* Optional */
+    font-style: normal; /* Optional */
+}
+
+.main{
+    max-height: 100vh;
+    max-width:100vw;
+}
+
+.nav{
+    background-color: orange;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    height: 7vh;
+}
+
+.nav h2 {
+    margin-top : 20px;
+    margin-left: 80px;
+}
+
+.login {
+    display:flex;
+    flex-direction: row; 
+}
+
+.login img {
+    margin-top: 15px;
+    margin-right: 40px;
+    height: 4vh;
+    border-radius :50%;
+}
+
+#fname{
+    margin-top: 10px;
+    padding : 12px;
+    font-size: x-large;
+    font-weight:400;
+}
+
+.parent{
+    height : 90vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: black;
+    height : 55em;
+    width: 55em;
+    margin-top:60px;
+    border-radius: 20%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sudoku-table {
+    height: 40em;
+    width : 40em;
+    display :flex;
+    flex-direction : column;
+}
+
+
+.sudoku-row {
+    display : flex;
+    flex-direction: row;
+}
+.sudoku-table table,tr,td{
+    border: 1px solid black ; 
+    border-collapse: collapse;
+}
+
+.table {
+    border: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.table td{
+    width : 1px;
+    height:1px;
+}
+
+.editor{
+    width:70px;
+    height:70px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.buttons {
+    justify-self: center;
+    display:flex;
+    justify-content: space-between;
+    width : 650px;
+    margin : inherit;
+
+    
+}
+
+.buttons button {
+    background-color: orange;
+    border: 5px solid white;
+    color: black;
+    width : 175px;
+    height: 56px;
+    color: white;
+    font-size: larger;
+}
+
+#HintsError{
+    display:none;
+    font-family: ErrorMsg;
+    z-index: 1;
+    background-color: red;
+    position: absolute;
+    height: 290px;
+    width: 500px;
+    border:4px solid black;
+}
+
+#WrongInputError {
+    display:none;
+    font-family: ErrorMsg;
+    z-index: 1;
+    background-color: red;
+    position: absolute;
+    height: 290px;
+    width: 500px;
+    border:4px solid black;
+}
+
+#SuccessMsg {
+    display : none;
+    font-family: ErrorMsg;
+    z-index: 1;
+    background-color: orange;
+    position: absolute;
+    height: 290px;
+    width: 500px;
+    border:4px solid black;
+}
+
+#SuccessError {
+    display : none;
+    font-family: ErrorMsg;
+    z-index: 1;
+    background-color: red;
+    position: absolute;
+    height: 290px;
+    width: 500px;
+    border:4px solid black;
+}
+
+#NewGame_Success {
+    justify-self: flex-end;
+    /* margin-top: 78px; */
+    border: 4px solid black;
+    width: 143px;
+    /* align-self: flex-end; */
+    background-color: orangered;
+    color: white;
+    padding: 2px;
+    margin-top: 30px;
+}
+
+div#whitespace {
+    font-family: ErrorMsg;
+    background: #feebc8;
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    width: 479px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    margin-top:20px;
+}
+
+#text{
+    font-family: ErrorMsg;
+    font-size : 18px;
+    margin : 4px;
+}
+
+#errorMsg {
+    font-family: ErrorMsg;
+    margin-left : 8px;
+    font-size: 28px;
+    color: white;
+    MARGIN-TOP: 10px;
+}
+
+#NewGame_Error_1  , #NewGame_Error_2 , #NewGame_Error_3{
+    justify-self: flex-end;
+    /* margin-top: 78px; */
+    border: 4px solid black;
+    width: 143px;
+    /* align-self: flex-end; */
+    background-color: red;
+    color: white;
+    padding: 2px;
+    margin-top: 30px;
+}
+
+.errorBtns {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Go-Back, #Go-Back-1 {
+    border: 4px solid black;
+    width: 143px;
+    /* align-self: flex-end; */
+    background-color: red;
+    color: white;
+    padding: 2px;
+    margin-top: 30px;
+}
+
+
+
