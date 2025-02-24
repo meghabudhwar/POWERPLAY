@@ -1,0 +1,64 @@
+.nav{
+    background-color: orange;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    height: 7vh;
+}
+
+.parent{
+    height : 93vh;
+    width : 100vw;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: orange;
+    height : 55em;
+    width: 55em;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#login_bus {
+    height: 45em;
+    width : 45em;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#login_bus label{
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#login_bus input {
+    height: 5vh;
+    border: 3px solid black;
+    line-height:inherit
+}
+
+#sumbitbtn {
+    background-color: green;
+    color: white;
+    font-size: xx-large;
+    width: 12vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sumbitbtn:hover{
+    background-color: white;
+    color: green;
+}
